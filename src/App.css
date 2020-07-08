@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  padding-top: 10px;
+}
+
+body {
+  background-color: rgb(247, 221, 231);
+  color: rgb(0, 0, 0);
+  font: normal 16px Arial, Helvetica sans-serif;
+  line-height: 1.6em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.footer-name {
+  margin-left: 0.25em;
+  word-wrap: break-word;
+}
+
+#main-header {
+  text-align: center;
+  padding: 10px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(53, 49, 49, 0.5);
+  z-index: 2;
+}
+
+.container {
+  width: 80%;
+  max-width: 1920px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  border-width: 0px;
+  border-top-width: 2px;
+  border-top: #555;
+  border-style: solid;
+}
+
+.header {
+  font-size: 3em;
+  padding-top: 0.5em;
+  padding-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+.main {
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.boxi {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#intro-area {
+  width: 50%;
+  padding-left: 5%;
+  height: auto;
+  margin: auto;
+}
+
+#intro {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+#name {
+  font-size: 32px;
+  line-height: 1.2em;
+  font-family: fantasy;
+}
+
+#job-desc {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#pic-area {
+  padding: 10px 20px;
+  margin: auto;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+#picture {
+  height: 500px !important;
+}
+
+#area {
+  overflow: auto;
+  background-color: #fff;
+  cursor: default;
+  margin: auto;
+  padding: 2%;
+  width: 60%;
+  z-index: 3;
+  max-height: 80%;
+  position: fixed;
+  word-wrap: break-word;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-radius: 3em;
+  border-color: grey;
+  border-width: 7px;
+}
+
+.title-area {
+  display: flex;
+  margin-left: 10px;
+  font-size: 1.6em;
+  line-height: 1.6em;
+}
+
+#project-name {
+  width: 70%;
+}
+
+.close-btn-area {
+  width: 30%;
+  text-align: right;
+}
+
+.close-button {
+  font-size: 2em;
+  padding-right: 5px;
+  color: red;
+  cursor: pointer;
+}
+
+#info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .boxi {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  #area {
+    width: 90%;
+  }
+
+  #info {
+    flex-direction: column;
+  }
+
+  .close-button {
+    font-size: 1.5em;
+    padding-top: 10px;
+  }
+}
+
+.link-image {
+  width: auto;
+  height: 75px;
+  margin: 0px 10px;
+}
+
+.block {
+  text-align: center;
+  padding: 10px;
+}
+
+.item {
+  padding-bottom: 10px;
+}
+
+li.item:hover {
+  font-weight: bold;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 5%;
+  padding-bottom: 10px;
+}
+
+.indent {
+  padding-left: 3%;
+  font-size: 14px;
+}
+
+.title {
+  margin: 20px;
+  word-wrap: break-word;
+}
+
+.description {
+  margin: 20px;
+  font-size: 14px;
+}
+.read-more-area {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-area {
+  min-height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.contact {
+  margin: 0px 10%;
+  font-size: 1em;
+  word-wrap: break-word;
+}
+
+.cont-info {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+}
+
+.cont-links {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+@media (max-width: 400px) {
+  .cont-links {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.font-image {
+  font-size: 5rem;
+  margin: auto;
+  padding: 0.5rem;
+  color: #2867b2;
+}
+
+.font-image-area {
+  padding: 0.5em;
+}
+
+@media (max-width: 1120px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+  #intro-area {
+    width: 80%;
+  }
+
+  .btn-area {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cont-info {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cont-links {
+    margin-top: 20px;
+  }
+}
