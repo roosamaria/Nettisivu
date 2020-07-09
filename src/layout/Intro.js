@@ -14,8 +14,14 @@ export default function Intro() {
           </div>
           <div className="description">
             <p>
-              I am studying game development in TAMK Games Academy and I am
-              currently looking to change from making games to web development.
+              I am a BBA student from Finland. I'm studying International
+              Business in Haaga-Helia University of Applied Sciences. My
+              specialization is marketing and i'm also interested in
+              globalisation. <br />
+              <span style={{ fontWeight: "bold" }}>
+                On my blog you can read about personal growth and how to build
+                and develop your professional identity.
+              </span>
             </p>
           </div>
         </div>

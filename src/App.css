@@ -37,6 +37,10 @@ footer {
   cursor: pointer;
 }
 
+.otsikko {
+  font-weight: bold;
+}
+
 #overlay {
   position: fixed;
   width: 100%;
@@ -55,6 +59,7 @@ footer {
   margin: auto;
   justify-content: center;
   align-items: center;
+  background-color: #f3f3f3;
 }
 
 .section {
@@ -69,6 +74,26 @@ footer {
   padding-top: 0.5em;
   padding-left: 1em;
   margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: row;
+}
+
+.logoimage {
+  height: 120px;
+}
+
+nav {
+  width: 80%;
+}
+
+.Navi {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.navitem {
+  margin: auto;
 }
 
 .main {
@@ -85,9 +110,22 @@ footer {
   justify-content: space-evenly;
 }
 
+.blogilinkki {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.blogikuva {
+  width: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 #intro-area {
-  width: 50%;
-  padding-left: 5%;
+  width: 95%;
+  padding-left: 0%;
   height: auto;
   margin: auto;
 }
@@ -143,6 +181,7 @@ footer {
 
 .title-area {
   display: flex;
+  text-align: center;
   margin-left: 10px;
   font-size: 1.6em;
   line-height: 1.6em;
@@ -231,6 +270,11 @@ li.item:hover {
   margin: 20px;
   font-size: 14px;
 }
+
+.bold {
+  font-weight: bold;
+}
+
 .read-more-area {
   padding-bottom: 10px;
   display: flex;
