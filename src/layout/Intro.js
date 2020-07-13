@@ -18,7 +18,7 @@ export default function Intro() {
               Business in Haaga-Helia University of Applied Sciences. My
               specialization is cutomer relationship management and marketing.
               After my BBA studies I have planned to do Master's degree in
-              globalisation. <br />
+              globalisation.  <br />
               <span style={{ fontWeight: "bold" }}>
                 On my blog you can read about personal growth and how to build
                 and develop your professional identity.
