@@ -16,7 +16,8 @@ export default function Intro() {
             <p>
               I am a BBA student from Finland. I'm studying International
               Business in Haaga-Helia University of Applied Sciences. My
-              specialization is marketing and i'm also interested in
+              specialization is cutomer relationship management and marketing.
+              After my BBA studies I have planned to do Master's degree in
               globalisation. <br />
               <span style={{ fontWeight: "bold" }}>
                 On my blog you can read about personal growth and how to build
