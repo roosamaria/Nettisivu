@@ -1,43 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
+import Overlay from "./Overlay";
+import häpeä from "../images/häpeä.jpg";
+import Blog from "../components/Blog";
 
-export default function About() {
+export default function MyProjects() {
+  const [activeProject, setActiveProject] = useState(null);
+
+  const onClick = (proj) => setActiveProject(proj);
+
   return (
-    <div className="section">
-      <div className="title">
-        <h1>About Me</h1>
+    <React.Fragment>
+      <div>
+        <div className="title">
+          <h1>Blogi</h1>
+        </div>
+        <ul className="list">
+          <Blog
+            title="häpeä"
+            image={häpeä}
+            description="Mitä on häpeä? Mistä häpeä kantautuu?"
+            openFunc={onClick}
+            id={1}
+          />
+          <Blog
+            title="työmaa"
+            image={häpeä}
+            description="Mitä on häpeä? Mistä häpeä kantautuu?"
+            openFunc={onClick}
+            id={2}
+          />
+          <Blog
+            title="mitähelee"
+            image={häpeä}
+            description="Mitä on häpeä? Mistä häpeä kantautuu?"
+            openFunc={onClick}
+            id={3}
+          />
+        </ul>
+        <div className="read-more-area">
+          <h4 className="read-more">Click on an article to read more!</h4>
+        </div>
       </div>
-      <div className="list description">
-        <p style={{ marginBottom: 5 }}>
-          I am a third year student of Information Technology at Tampere
-          University of Applied Sciences.
-        </p>
-        <p style={{ marginBottom: 5 }}>
-          I have been programming since the start of my studies at TAMK in 2017.
-          Starting with Java and some basic HTML &amp; CSS. I moved on to C# and
-          Unity when I was assigned to the game development path. I've been
-          developing with C# for over two years now, learning new and better
-          ways to implement features through practical experience and reflecting
-          eachothers work with other developers.
-        </p>
-        <p style={{ marginBottom: 5 }}>
-          All of my released projects that I have listed below, have been made
-          in an international team and thus I have gotten good experience in
-          working with people who don't share the same native language. The
-          language wall can easily break communication inside the team f.ex.
-          when people are misunderstood or when someone doesn't want to share
-          their opinion because they feel that they can't articulate their
-          opinion properly. Articulating in another language can be hard but
-          when communicating inside the team, you shouldn't worry so much about
-          articulating that you decide to keep your opinion to yourself.
-        </p>
-        <p style={{ marginBottom: 5 }}>
-          Recently I've been getting into web development. I started with
-          relearning HTML and CSS, moving on to JavaScript and now I've been
-          doing React. It has been an experience to change from C# to JS but
-          I've been improving daily and plan to improve myself in this field
-          further.
-        </p>
-      </div>
-    </div>
+      {activeProject ? (
+        <Overlay id={activeProject} closeFunc={setActiveProject} />
+      ) : null}
+    </React.Fragment>
   );
 }

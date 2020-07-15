@@ -4,19 +4,16 @@ export default function MySkills() {
   return (
     <div>
       <div className="title">
-        <h1>My Skills</h1>
+        <h1>My Projects</h1>
       </div>
       <div className="list">
         <li>
-          <h4>Unity Development</h4>
+          <h4>Podcast and Blog</h4>
           <ul>
-            C#, MonoBehaviour, Unity3D, <br />
-            Animator / Controller, Particle System
-          </ul>
-          <h4>Web Development</h4>
-          <ul>
-            JavaScript, React, <br />
-            HTML, CSS
+            Creating own content in Finnish about international lifestyle and
+            career development
+            <h4>Nordic Business Forum</h4>
+            <ul>High-class customer service experience</ul>
           </ul>
         </li>
       </div>

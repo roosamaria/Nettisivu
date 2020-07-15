@@ -14,26 +14,6 @@ export default function Contact() {
           <p>+358 40 961 0743</p>
         </div>
       </div>
-      <div className="cont-links">
-        <FontLink
-          target="_blank"
-          link="https://www.linkedin.com/in/roosa-sipari-995157199/"
-          fontImage="fab fa-linkedin"
-          color="#2867b2"
-        />
-        <FontLink
-          target="_blank"
-          link="https://www.facebook.com/roosa.sipari"
-          fontImage="fab fa-facebook"
-          color="#3B5998"
-        />
-        <FontLink
-          target="_blank"
-          link="https://www.instagram.com/roosmaria_/?hl=fi"
-          fontImage="fab fa-instagram"
-          color="#DD2A7B"
-        />
-      </div>
     </div>
   );
 }
